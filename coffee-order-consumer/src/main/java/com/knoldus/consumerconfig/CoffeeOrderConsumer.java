@@ -44,11 +44,8 @@ public class CoffeeOrderConsumer {
                     log.error("Exception is : {}", e.getMessage());
 
                 }
-
             }
         }
-
-
     }
 
     public static CoffeeOrder decodeCoffeeOrder(byte[] array) throws IOException {
