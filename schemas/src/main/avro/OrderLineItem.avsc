@@ -1,0 +1,27 @@
+{
+  "name": "OrderLineItem",
+  "namespace": "com.knoldus.model",
+  "type": "record",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "size",
+      "type": {
+        "type": "enum",
+        "name": "Size",
+        "symbols": [
+          "SMALL",
+          "MEDIUM",
+          "LARGE"
+        ]
+      }
+    },
+    {
+      "name": "quantity",
+      "type": "int"
+    }
+  ]
+}

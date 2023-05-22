@@ -1,0 +1,38 @@
+{
+  "name": "CoffeeOrder",
+  "namespace": "com.knoldus.model",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": "int",
+      "doc": "Id of the order"
+    },
+
+    {
+      "name": "name",
+      "type": "string",
+      "Name": "Name of the order"
+    },
+    {
+      "name": "nickName",
+      "type": "string",
+      "default": "",
+      "doc": "Optional field represents the nickname of the customer"
+    },
+    {
+      "name": "store",
+      "type": "Store"
+    },
+    {
+      "name": "orderLineItems",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "orderLineItem",
+          "type": "OrderLineItem"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Address",
+  "namespace": "com.knoldus.model",
+  "type": "record",
+  "fields": [
+    {
+      "name": "city",
+      "type": "string",
+      "doc": "city of the order"
+    },
+    {
+      "name": "street",
+      "type": "string",
+      "doc": "Exact street address of the customer"
+    },
+    {
+      "name": "zip",
+      "type": "int"
+    }
+  ]
+}
