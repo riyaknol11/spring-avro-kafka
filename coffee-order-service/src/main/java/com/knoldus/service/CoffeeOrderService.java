@@ -10,7 +10,6 @@ import java.io.IOException;
 
 @Service
 public class CoffeeOrderService {
-
     private final KafkaTemplate<String, byte[]> kafkaTemplate;
     private final KafkaConfig kafkaConfig;
 
@@ -22,7 +21,6 @@ public class CoffeeOrderService {
 
     public void processOrder(CoffeeOrder coffeeOrder) throws IOException {
         byte[] value = coffeeOrder.toByteBuffer().array();
-
         kafkaTemplate.send(kafkaConfig.getCoffeeOrdersTopic(), value);
     }
 }

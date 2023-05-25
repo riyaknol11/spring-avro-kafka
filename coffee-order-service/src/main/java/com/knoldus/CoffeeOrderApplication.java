@@ -9,7 +9,6 @@ import org.springframework.kafka.annotation.EnableKafka;
 @EnableKafka
 @ComponentScan
 public class CoffeeOrderApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(CoffeeOrderApplication.class, args);
     }
